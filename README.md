@@ -61,5 +61,4 @@ This project is open-source and available under the MIT License.
 ## 🤝 Contribution
 Feel free to contribute by creating a pull request!
 
-## 📧 Contact
-For any issues or suggestions, contact **your.email@example.com**.
+## Hope this help your assignments XD
