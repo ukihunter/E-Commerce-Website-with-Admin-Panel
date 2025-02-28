@@ -2,6 +2,7 @@
 
 ## 📌 Overview
 This is a fully functional e-commerce website built using **PHP, HTML, JavaScript, and AJAX**, featuring an admin panel for managing products, users, and orders.
+![Demo](image/demo.gif)
 
 ## 🏷️ Topic
 E-commerce Website Development with Admin Panel
