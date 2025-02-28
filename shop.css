@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: rgb(247, 246, 245);
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 64px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.selection-p1 {
+  padding: 40px 80px;
+}
+.selection-m1 {
+  margin: 40px 0;
+}
+body {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: #e0e0e0f1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #c27878;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #465b52;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#title p {
+  text-align: center;
+  color: #aaa3a3;
+  font-weight: bolder;
+}
+#title h2 {
+  text-align: center;
+  color: #7c97a8;
+  background-color: #acc0ba80;
+  border-radius: 20px;
+}
+.star {
+  color: #c9bd1f;
+}
+#procart {
+  color: #95ca88;
+  background-color: #969b894f;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 90%;
+  transform: translateY(-60%);
+  box-shadow: 0 4px 8px rgb(97, 96, 96);
+  transition: all 0.2s ease-in-out;
+}
+
+#procart:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgb(59, 50, 50);
+  border-color: #6ea161;
+}
+
+.category-container {
+  text-align: center;
+  padding: 20px;
+}
+.category-container p {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.category-buttons {
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #81a59788;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-buttons button:hover {
+  background-color: #d1e0e0;
+  color: #333;
+}
+
+.category-buttons button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #aa9898;
+  transition: width 0.3s;
+}
+
+.category-buttons button:hover::after {
+  width: 100%;
+}
+
+.category-buttons button.active {
+  background-color: #9bb8b6;
+  color: #fff;
+}
+
+.clothing-category {
+  display: none;
+}
+.clothing-category.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.product {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid #bbaeae5b;
+  border-radius: 50px 1px 6px;
+  /* box-shadow: 0px 4px 8px 2px rgb(122, 121, 121); */
+  padding: 10px;
+  background-color: #f0f0e2d5;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #c5c1c1a9;
+}
+
+.product h4 {
+  margin: 10px 0 5px 0;
+}
+
+.product p {
+  color: #333;
+}
+
+#sh-banner {
+  background-image: url(image/shop/sh-ban.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#sh-banner h4 {
+  color: rgb(86, 219, 219);
+}
+
+#sh-banner h2 {
+  color: whitesmoke;
+}
+
+.product-sh {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid #bbaeae5b;
+  border-radius: 50px 1px 6px;
+  /* box-shadow: 0px 4px 8px 2px rgb(122, 121, 121); */
+  padding: 10px;
+  background-color: #f0f0e2d5;
+  position: relative;
+}
+
+#productdetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#productdetails .single-img {
+  width: 40%;
+  margin-right: 50px;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-img-sm {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.smimg {
+  transition: transform 0.2s;
+}
+
+.smimg:hover {
+  transform: scale(1.1);
+}
+
+#productdetails .single-pro-details {
+  width: 100%;
+  padding-top: 30px;
+}
+
+#pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Styling each link */
+#pagination a {
+  text-decoration: none;
+  background-color: teal;
+  padding: 15px 20px;
+  color: whitesmoke;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+/* Hover effect */
+#pagination a:hover {
+  transform: scale(1.1);
+}
+#newsteler {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(image/sm-banner/sm-banner7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  height: 160px;
+}
+
+#newsteler h4 {
+  color: white;
+  font-size: 30px;
+}
+
+#newsteler p {
+  color: wheat;
+}
+
+#newsteler input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#newsteler button {
+  background-color: gold;
+  padding: 11px 18px;
+  border: 1px solid #838181;
+  outline: none;
+  transition: 0.2s;
+  border-radius: 10px 1px;
+  font-size: 17px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #838181;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #838181;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .colinstall img {
+  width: 150px; /* Adjust size as needed */
+  height: 40px; /* Maintain aspect ratio */
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
