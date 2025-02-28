@@ -53,7 +53,7 @@ This project is an online shopping platform that allows users to browse, purchas
 - **URL:** `http://localhost/ecommerce-site/admin/`
 - **Default Credentials:**
   - **Username:** `admin`
-  - **Password:** `admin123`
+  - **Password:** `123`
 
 ## 📜 License
 This project is open-source and available under the MIT License.
