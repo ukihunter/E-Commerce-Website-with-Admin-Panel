@@ -1,0 +1,237 @@
+.selection-p1 {
+  padding: 40px 80px;
+}
+
+#small-bn {
+  width: 100vw; /* Full width of the viewport */
+  margin: 0; /* Remove any margin around the element */
+  padding: 40px 0px; /* Ensure no padding around */
+}
+#small-bn .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px;
+
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Make sure the banner-box also spans full width */
+  margin: 0; /* Remove any margin that may add space */
+}
+
+#small-bn h4 {
+  font-size: 40px;
+}
+
+#small-bn h2 {
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+#small-bn button {
+  background-color: transparent;
+  padding: 11px 18px;
+  border: 1px solid #838181;
+  outline: none;
+  transition: 0.2s;
+  border-radius: 10px 1px;
+  font-size: 20px;
+}
+
+#small-bn button:hover {
+  background-color: tomato;
+  color: whitesmoke;
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 90px;
+  gap: 20px;
+}
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px;
+
+  min-width: 30%;
+  height: 30vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+#banner3 h2 {
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 .banner-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  min-width: 30%;
+  height: 30vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+#banner3 .banner-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  min-width: 30%;
+  height: 30vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+#newsteler {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 300px;
+  overflow: hidden; /* Ensures the image doesn't spill out */
+  width: 100%; /* Full width */
+}
+
+.newsletter-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover; /* Ensures the image covers the entire section */
+  z-index: -1; /* Sends the image behind the content */
+}
+
+.newstext h4 {
+  font-size: 30px;
+  margin: 0;
+  color: white;
+}
+
+.newstext p {
+  margin: 5px 0;
+  color: wheat;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form input {
+  height: 3.125rem;
+  width: 30rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form button {
+  background-color: gold;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form button:hover {
+  background-color: rgb(37, 215, 228);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #newsteler {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form input {
+    width: 100%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #838181;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #838181;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .colinstall img {
+  width: 150px; /* Adjust size as needed */
+  height: 40px; /* Maintain aspect ratio */
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
